@@ -1,0 +1,190 @@
+{\rtf1\ansi\ansicpg1252\cocoartf949\cocoasubrtf540
+\readonlydoc1{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue255;\red102\green102\blue102;\red17\green17\blue17;
+}
+\margl1440\margr1440\vieww10760\viewh14780\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\f0\fs84 \cf0 Make Bookmarkable 
+\fs36  v2.6
+\fs84 \
+
+\fs36 AppleScript for iTunes
+\fs24 \
+Find more 
+\b free
+\b0  AppleScripts\
+and info on writing your own\
+at {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/"}}{\fldrslt Doug's AppleScripts for iTunes}}.\
+\
+
+\fs36 Changes the file type of the files of the selected un-protected AAC tracks in iTunes to "M4B", making them bookmarkable. The filename of each track will be renamed with the ".m4b" extension.\
+\
+When used with iTunes 7 or better, deletes and re-adds each track so it will appear in the Books Library. Ratings, play count, last played date, skip count, and skipped date are preserved.\
+
+\fs24 \
+
+\b This script is {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/itinfo/donate.php"}}{\fldrslt Donationware}}. If you use it and like it 
+\i please
+\i0  consider making a donation to support my AppleScripting efforts. {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/itinfo/donate.php"}}{\fldrslt Click here}} for more info.
+\b0\fs36 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\b\fs24 \cf2 Installation:
+\b0 \cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\b \cf0 To manually install: 
+\b0 Put AppleScripts in your iTunes Scripts folder. This is located in 
+\i \cf3 [user name] > Library > iTunes
+\i0 \cf0 . If there is no folder named "Scripts" there, create one and put the script(s) in it. AppleScripts will then appear in iTunes' Script menu, and can be activated by selecting by name and clicking. Be sure to also save this Read Me document in a safe and convenient place.\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\b \cf2 How to use:
+\b0 \cf0 \
+\
+Select some tracks in iTunes. If they are AAC, then the file type of each track's file will be changed to "M4B " and its filename extension changed to ".m4b".\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\b \cf0 If you are using iTunes 7 or better
+\b0 , each track will be deleted and then re-added so it will appear in the Books Library. Ratings, last played date, play count, skipped date, and skip count will be preserved.\
+\
+This script is based on info provided by Apple in the {\field{\*\fldinst{HYPERLINK "http://docs.info.apple.com/article.html?artnum=93731"}}{\fldrslt Knowledge Base Article ID 93731}}, which has since been removed.\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\b \cf2 About "bookmarkable" AAC files:
+\b0 \cf0 \
+\
+\'95 Bookmarkable AAC files not only have "bookmarkability"\'96the ability to begin playing from the point at which they were last paused or stopped\'96they will also be displayed in iTunes' Audiobook Library and the iPod's Audiobook category.\
+\
+\'95 On a Mac, a bookmarkable AAC file has a 
+\b file type
+\b0  of "M4B ". The 
+\b file type
+\b0  is an internal property of a Macintosh file. Additionally, it 
+\i probably
+\i0  should have a ".m4b" file name extension. However, simply changing the file extension of an AAC file from ".m4a" to ".m4b" on a Macintosh will not make it bookmarkable.\
+\
+There is one exception: if the AAC file has no file type (if it's file type is blank, or is set to "    " or "????") then the Mac OS will use the extension to determine the file type.\
+\
+\'95 Windows does not recognize Macintosh file types. Windows relies on the extension to identify a file's file type. So, to make an AAC file bookmarkable on Windows, you 
+\i must
+\i0  change the file extension to ".m4b".\
+\
+\'95 The "kind" of a bookmarkable track in iTunes is listed as "Protected AAC audio file". If you use "Make Bookmarkable" to alter your 
+\i non-protected
+\i0  AAC files they will be thus designated. Their file icons will also display the tiny lock glyph. But in reality they are 
+\b not
+\b0  copy protected. (If it were that easy to make an audio file copy protected it would be just as easy to remove the copy protection and Apple would never allow this.)\
+\
+\
+
+\b \cf2 Helpful Links:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\b0 \cf0 \
+Click on the underlined URL text:\
+\
+- {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/"}}{\fldrslt Doug's AppleScripts for iTunes}}\
+- {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/itinfo/shortcutkeys.php"}}{\fldrslt Assign Shortcut Keys to AppleScripts}}\
+- {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/itinfo/downloadfaq.php"}}{\fldrslt Download FAQ}} - 
+\b Info on downloading and installing AppleScripts
+\b0 \
+- {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/dougs.rss"}}{\fldrslt Doug's RSS Feed}} - 
+\b Recent site news, script additions and updates
+\b0  (add link to your news reader)\
+- {\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/dougsupdated.rss"}}{\fldrslt 30 Most Recent RSS Feed}} - 
+\b Most recent new and updated scripts
+\b0  (add link to your news reader)\
+\
+
+\b Information and download link for this script is located at:
+\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural\pardirnatural
+{\field{\*\fldinst{HYPERLINK "http://dougscripts.com/itunes/scripts/ss.php?sp=makebookmarkable"}}{\fldrslt \cf0 http://dougscripts.com/itunes/scripts/ss.php?sp=makebookmarkable}}\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\fs20 \cf4 Version History:\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural\pardirnatural
+
+\b \cf4 \CocoaLigature0 v2.6
+\b0  sept 4, 2010\
+- compatible with iTunes 10\
+
+\b \
+
+\b0 v2.5 aug 6, 2008\
+- compatible with iTunes 7.7.1\
+
+\b \
+
+\b0 v2.4 apr 23, 2008\
+- fixes problem with files located on MS-DOS FAT32 formatted drives\
+- some GUI changes\
+\
+v2.3 apr 3, 2008\
+- saved as universal binary\
+\
+v2.2 jan 18, 2008\
+- works around "Apple Event timeout" error with iTunes 7.6\
+\
+v2.1 sept 18, 2006\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural\pardirnatural
+\cf0 - deletes and re-adds tracks even if their files' extensions are already ".m4b"\
+\
+v2.0 sept 15, 2006\
+- deletes and then re-adds the track to iTunes so it appears in iTunes 7 or better Audiobooks Library\
+\
+v1.5 dec 31, 2005\
+- changes extension of selected tracks' files to ".m4b"\
+\
+v1.0 mar 1, 2004\
+- initial release\cf4 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+\cf4 \
+this doc last updated September 4 10\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\fs24 \cf0 \
+
+\b If you have any trouble with this script, please email me.
+\b0 \
+My name is Doug Adams\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+{\field{\*\fldinst{HYPERLINK "mailto:dougscripts@mac.com"}}{\fldrslt \cf2 \ul \ulc2 dougscripts@mac.com}}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\fs20 \cf0 This software is released "as-is". By using it or modifying it you agree that its author cannot be held responsible or liable for any tragedies resulting thereof.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural\pardirnatural
+\cf0 \CocoaLigature0 This program is free software; you can redistribute it and/or modify it under the terms of the 
+\b GNU General Public License
+\b0  as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\
+\
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\
+\
+Get a copy of the GNU General Public License by writing to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\
+\
+or visit {\field{\*\fldinst{HYPERLINK "http://www.gnu.org/copyleft/gpl.html"}}{\fldrslt http://www.gnu.org/copyleft/gpl.html}}
+\f1\i\fs18 \cf3 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\f0\i0\fs24 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\fs20 \cf0 AppleScript, iTunes, and iPod are registered trademarks of {\field{\*\fldinst{HYPERLINK "http://www.apple.com"}}{\fldrslt Apple}} Inc.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li180\ql\qnatural
+
+\fs24 \cf0 \
+}
