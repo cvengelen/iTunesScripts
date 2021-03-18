@@ -1,2 +1,2 @@
 # iTunesScripts
-Applescript scripts for manipulating track information in iTunes.
+Applescript scripts for manipulating track information in Music
